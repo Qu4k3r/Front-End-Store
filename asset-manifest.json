@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Front-End-Store/static/css/main.ac67c944.chunk.css",
+    "main.js": "/Front-End-Store/static/js/main.9691fa44.chunk.js",
+    "main.js.map": "/Front-End-Store/static/js/main.9691fa44.chunk.js.map",
+    "runtime-main.js": "/Front-End-Store/static/js/runtime-main.9f7f630c.js",
+    "runtime-main.js.map": "/Front-End-Store/static/js/runtime-main.9f7f630c.js.map",
+    "static/js/2.ca5f3d7e.chunk.js": "/Front-End-Store/static/js/2.ca5f3d7e.chunk.js",
+    "static/js/2.ca5f3d7e.chunk.js.map": "/Front-End-Store/static/js/2.ca5f3d7e.chunk.js.map",
+    "index.html": "/Front-End-Store/index.html",
+    "precache-manifest.60f016e83bde46b91dc39a30e870faac.js": "/Front-End-Store/precache-manifest.60f016e83bde46b91dc39a30e870faac.js",
+    "service-worker.js": "/Front-End-Store/service-worker.js",
+    "static/css/main.ac67c944.chunk.css.map": "/Front-End-Store/static/css/main.ac67c944.chunk.css.map",
+    "static/js/2.ca5f3d7e.chunk.js.LICENSE.txt": "/Front-End-Store/static/js/2.ca5f3d7e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f7f630c.js",
+    "static/js/2.ca5f3d7e.chunk.js",
+    "static/css/main.ac67c944.chunk.css",
+    "static/js/main.9691fa44.chunk.js"
+  ]
+}
