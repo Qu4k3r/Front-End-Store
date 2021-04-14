@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import Home from './components/Home';
 import Carrinho from './components/Carrinho';
 import Detalhes from './components/Detalhes';
@@ -48,43 +48,41 @@ class App extends Component {
     const { cartItems, cartItemsQuantity } = this.state;
     return (
       <main>
-        <BrowserRouter>
-          <Switch>
-            <Route
-              path="/carrinho"
-              render={ () => (
-                <Carrinho
-                  products={ cartItems }
-                  removeProduct={ this.removeItem }
-                  handleCartItemsQuantity={ this.updateTotalItems }
-                />) }
-            />
-            <Route
-              path="/checkout"
-              render={ () => <Checkout products={ cartItems } /> }
-            />
-            <Route
-              path="/:id/detalhes"
-              render={ (props) => (
-                <Detalhes
-                  { ...props }
-                  addToCart={ this.addToCart }
-                  handleCartItemsQuantity={ this.updateTotalItems }
-                  cartItemsQuantity={ cartItemsQuantity }
-                />) }
-            />
-            <Route
-              exact
-              path="/"
-              render={ () => (
-                <Home
-                  cartItemsQuantity={ cartItemsQuantity }
-                  addToCart={ this.addToCart }
-                  handleCartItemsQuantity={ this.updateTotalItems }
-                />) }
-            />
-          </Switch>
-        </BrowserRouter>
+        <Switch>
+          <Route
+            path="/carrinho"
+            render={ () => (
+              <Carrinho
+                products={ cartItems }
+                removeProduct={ this.removeItem }
+                handleCartItemsQuantity={ this.updateTotalItems }
+              />) }
+          />
+          <Route
+            path="/checkout"
+            render={ () => <Checkout products={ cartItems } /> }
+          />
+          <Route
+            path="/:id/detalhes"
+            render={ (props) => (
+              <Detalhes
+                { ...props }
+                addToCart={ this.addToCart }
+                handleCartItemsQuantity={ this.updateTotalItems }
+                cartItemsQuantity={ cartItemsQuantity }
+              />) }
+          />
+          <Route
+            exact
+            path="/"
+            render={ () => (
+              <Home
+                cartItemsQuantity={ cartItemsQuantity }
+                addToCart={ this.addToCart }
+                handleCartItemsQuantity={ this.updateTotalItems }
+              />) }
+          />
+        </Switch>
       </main>
     );
   }
